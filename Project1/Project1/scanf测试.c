@@ -1,11 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>//printf的头文件
 int main()
-{
-	printf("佟明昊，帅哥");
-	return 0;
+//打印输入的字符串
+//{
+//	char sum[100];
+//	scanf("%s", &sum);
+//	printf("%s\n", sum);
+//
+//	return 0;
+//}
 
-}
 //{
 //    int a;
 //    scanf("%d", &a);
