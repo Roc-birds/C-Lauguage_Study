@@ -1,12 +1,44 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+void print(int a[][3])
+{
+	int i = 0;
+	int y = 0;
+	for (i = 0; i <= 1; i++)
+	{
+		for (y = 0; y <= 2; y++)
+		{
+			printf("%d ", a[i][y]);
+		}
+	}
+}
 int main()
 {
-	char a[4];
-	scanf("%s", &a);
-	printf("a=%s\n", a);//%s是数据组类型 
+	int arr[2][3] = { (2,1),(3,4),(5,6) };
+	print(arr);
 	return 0;
 }
+
+
+
+
+//int main()
+//{
+//	{
+//		int a[][3] = {1,2,3,4,5,6,7,8,9};
+//		int i, y = 0;
+//		for (i = 0; i < 3; i++)
+//			{
+//				for (y = 0;y < 3; y++)
+//				{
+//					printf(" %d", a[i][y]);
+//			   }
+//				printf("\n");
+//		    }
+//		 
+//		return 0;
+//	}
+//}
 
 
 
