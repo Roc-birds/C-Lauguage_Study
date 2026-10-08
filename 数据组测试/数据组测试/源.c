@@ -1,20 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-void print(int a[][3])
-{
-	int i = 0;
-	int y = 0;
-	for (i = 0; i <= 1; i++)
-	{
-		for (y = 0; y <= 2; y++)
-		{
-			printf("%d ", a[i][y]);
-		}
-	}
-}
+#include"hanshu.h"
+
 int main()
 {
-	int arr[2][3] = { (2,1),(3,4),(5,6) };
+	int arr[2][3] = { 2,1,3,4,5,6 };
 	print(arr);
 	return 0;
 }
