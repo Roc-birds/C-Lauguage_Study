@@ -4,11 +4,29 @@
 int main()
 {
 	int a = 0;
-	int i = 1;
+
+	while (scanf("%d", &a) != EOF)
+	{
+		int i = 1;
+		int sum = 1;
+		while (i <= a)
+		{
+			sum = sum * i;
+			i++;
+		}
+		printf("%d\n", sum);
+	}
+	return 0;
+}
+
+int main1()
+{
+	int a = 0;
+	
 	while (scanf("%d", &a) != EOF)//大循环
 	{
+		int i = 1;
 		int pro = 1;
-		i = 1;
 		while (i <= a)//小循环 循环数的阶乘
 		{
 			pro = pro * i;//实现数的阶乘
