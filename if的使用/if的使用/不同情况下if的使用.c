@@ -1,7 +1,30 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-//给定一个长度为 n 的整数数组，然后再给定一个目标数字 x。请你在数组中查找 x 是否存在。如果存在，输出它第一次出现的下标（下标从 0 开始算）；如果不存在，输出 -1
+//输入一行只包含小写字母的字符串（不含空格），请将字符串中的字母从小到大排序（也就是按 ASCII 码从小到大排），然后输出排序后的字符串
+#include<stdio.h>
+#include<stdio.h>
 int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf("%d", &a);
+	 int arr[105] = { 0 };
+	for (b = 0;b < a; b++)
+	{
+		scanf("%d", arr[b]);
+	}
+	while (b >= 0)
+	{
+		printf("%d", arr[b]);
+		b--;
+	}
+
+	return 0;
+}
+
+
+//给定一个长度为 n 的整数数组，然后再给定一个目标数字 x。请你在数组中查找 x 是否存在。如果存在，输出它第一次出现的下标（下标从 0 开始算）；如果不存在，输出 -1
+int main5()
 {
 	int n = 0, i = 0;
 	int x = 0, r = 0;
