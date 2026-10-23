@@ -1,9 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 //输入一行只包含小写字母的字符串（不含空格），请将字符串中的字母从小到大排序（也就是按 ASCII 码从小到大排），然后输出排序后的字符串
-#include<stdio.h>
-#include<stdio.h>
-int main()
+
+{
+	int a=0, b=0;
+	scanf("%d%d", &a, &b);
+	printf("%d", a + b);
+	return 0;
+}
+int main6()
 {
 	int a = 0;
 	int b = 0;
