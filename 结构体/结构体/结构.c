@@ -19,13 +19,25 @@ int main()
 	printf("%s\n", identity.sex);
 	printf("%.4f\n", identity.weight);
 	printf("\n");
+
 	struct student B = { .phone = 120,.sex = "wowen",.height = 165,.weight = 46,.name = "zhang" };
 	printf("%s\n", B.name);
 	printf("%d\n", B.height);
 	printf("%ld\n", B.phone);
 	printf("%s\n", B.sex);
 	printf("%.4f\n", B.weight);
+	printf("\n");
 
-
+	typedef int T;
+	typedef struct Grafe
+	{
+		int math;
+		T English;
+		int history;
+	}good;
+	good a = { 143,114,75 };
+	printf("%d\n", a.math);
+	printf("%d\n", a.English);
+	printf("%d\n", a.history);
 	return 0;
 }
