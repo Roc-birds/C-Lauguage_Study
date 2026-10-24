@@ -18,5 +18,13 @@ int main()
 	printf("%ld\n", identity.phone);
 	printf("%s\n", identity.sex);
 	printf("%.4f\n", identity.weight);
+	printf("\n");
+	struct student B = { .phone = 120,.sex = "wowen",.height = 165,.weight = 46,.name = "zhang" };
+	printf("%s\n", B.name);
+	printf("%d\n", B.height);
+	printf("%ld\n", B.phone);
+	printf("%s\n", B.sex);
+	printf("%.4f\n", B.weight);
+
 	return 0;
 }
