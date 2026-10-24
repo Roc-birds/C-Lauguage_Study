@@ -26,5 +26,6 @@ int main()
 	printf("%s\n", B.sex);
 	printf("%.4f\n", B.weight);
 
+
 	return 0;
 }
