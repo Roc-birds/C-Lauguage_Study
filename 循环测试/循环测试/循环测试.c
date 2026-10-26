@@ -1,7 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-//循环的妙用 求一个数的阶乘 循环嵌套
+
 int main()
+{
+	char a[10007];
+	scanf("%s", &a);
+	printf("%s", a);
+	return 0;
+}
+//循环的妙用 求一个数的阶乘 循环嵌套
+int main2()
 {
 	int a = 0;
 

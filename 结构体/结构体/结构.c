@@ -1,5 +1,41 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+//枚举练习 红绿灯变化
+enum trafficlight
+{
+	green,
+	red,
+	yellow
+};
+int main()
+{
+	enum trafficlight light = red;
+	for (int a = 0; a <= 3; a++)
+	{
+       switch(light)
+	    {
+	   case red:
+			printf("stop\n");
+			light = green;
+			break;
+	   case green:
+			printf("go\n");
+			light = yellow;
+			break;
+	   case yellow:
+			printf("slow\n");
+			light = red;
+			break;
+	   default:
+				printf("bad");
+			break;
+	    }
+	}
+	
+	return 0;
+}
+
+
 struct student
 	{
 		char name[25];//姓名
@@ -10,7 +46,7 @@ struct student
 
 	};
 //结构体
-     typedef int T;
+     typedef int T;//给int 取别名T
 	typedef struct Grafe
 	{
 		int math;
@@ -26,7 +62,7 @@ struct student
 		printf("%d\n", p->English);
 		printf("%d\n", p->history);
 	}
-
+	//可以通过指针访问结构体内容
 	void result2(struct Grafe arr)
 	{
 		printf("\n");
@@ -36,7 +72,7 @@ struct student
 	}
 
 
-int main()
+int main1()
 {
 	
 	struct student identity = { "liuyipeng",110,"man",170,96.4 };
