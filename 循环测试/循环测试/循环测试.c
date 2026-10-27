@@ -3,6 +3,19 @@
 
 int main()
 {
+	int a = 0, b = 0;
+	scanf("%d", &a);
+	while (a != 0)
+	{
+		b += a % 10;
+		a /= 10;
+	}
+	printf("%d",b);
+	return 0;
+}
+
+int main3()
+{
 	char a[10007];
 	scanf("%s", &a);
 	printf("%s", a);
