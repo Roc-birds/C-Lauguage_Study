@@ -1,11 +1,85 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-//输入一行只包含小写字母的字符串（不含空格），请将字符串中的字母从小到大排序（也就是按 ASCII 码从小到大排），然后输出排序后的字符串
-
+//判断素数
+int main()
 {
-	int a=0, b=0;
-	scanf("%d%d", &a, &b);
-	printf("%d", a + b);
+	int a[105];
+	int n = 0;
+	scanf("%d", &n);
+	for (int t = 0; t < n; t++)
+	{
+		scanf("%d", &a[t]);
+		int p = 2;
+		for (p = 2; p <= a[t]; p++)
+		{
+			if (a[t] % p == 0)
+			{
+				break;
+			}
+		}
+		if (a[t] == p)
+		{
+			printf("Yes");
+		}
+		else
+		{
+			printf("NO");
+		}
+
+	}
+	return 0;
+}
+
+
+
+int main8()
+{
+	char ch;
+	int a, b;
+	scanf("%d %c %d", &a, &ch, &b);
+	if (ch == '+')
+	{
+		printf("%d", a + b);
+	}
+	if (ch == '-')
+	{
+		printf("%d", a - b);
+	}
+	if (ch == '*')
+	{
+		printf("%d", a * b);
+	}
+	if (ch =='/')
+	{
+		printf("%d", a / b);
+	}
+	return 0;
+}
+
+int main7()
+{
+	int a, s, d, f;
+	scanf("%d %d %d %d", &a, &s, &d, &f);
+	if (s == 1)
+	{
+		printf("%d+%d=%d ", a,d, f);
+		a + d == f ? printf("GOOD") : printf("SORRY");
+	}
+	else if (s == 2)
+	{
+		printf("%d-%d=%d ", a,d, f);
+		a - d == f ? printf("GOOD") : printf("SORRY");
+	}
+	else if (s == 3)
+	{
+		printf("%d*%d=%d ", a,d, f);
+		a* d == f ? printf("GOOD") : printf("SORRY");
+	}
+	else
+	{
+		printf("%d/%d=%d ", a,d, f);
+		a / d == f ? printf("GOOD") : printf("SORRY");
+	}
 	return 0;
 }
 int main6()
