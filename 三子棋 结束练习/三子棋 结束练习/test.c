@@ -3,21 +3,21 @@
 void _game()
 {
     char ret;
-	char plant[line][column];
-	init_plant(plant, line, column);
-	printf_plant(plant, line, column);
+	char board[line][column];
+	init_board(board, line, column);
+	printf_board(board, line, column);
 	while (1)
 	{
-	    play_move(plant,line,column);
-		printf_plant(plant, line, column);
-		ret = is_win(plant, line, column);
+	    play_move(board,line,column);
+		printf_board(board, line, column);
+		ret = is_win(board, line, column);
 		if (ret != 'N')
 		{
 			break;
 		}
-		pc_move(plant, line, column);
-		printf_plant(plant, line, column);
-		ret = is_win(plant, line, column);
+		pc_move(board, line, column);
+		printf_board(board, line, column);
+		ret = is_win(board, line, column);
 		if (ret != 'N')
 		{
 			break;

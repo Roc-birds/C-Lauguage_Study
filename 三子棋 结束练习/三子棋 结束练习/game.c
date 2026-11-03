@@ -8,7 +8,7 @@ void menu()
 	printf("*****************\n");
 }
 
-void init_plant(char a[line][column], int i, int j)
+void init_board(char a[line][column], int i, int j)
 {
 	for (int x = 0; x < line; x++)
 	{
@@ -17,7 +17,7 @@ void init_plant(char a[line][column], int i, int j)
 	}
 }
 
-void printf_plant(char a[line][column], int i, int j)
+void printf_board(char a[line][column], int i, int j)
 {
 	for (int x = 0; x < line; x++)
 	{
@@ -54,7 +54,12 @@ void play_move(char a[line][column], int i, int j)
 	{
 		printf("输入落子位置坐标，以空格分开：");
 		int q = 0, p = 0;
-		scanf("%d %d", &q, &p);
+		if (scanf("%d %d", &q, &p) != 2)
+		{
+			while(getchar()!='\n')
+			printf("输入合法数字\n");
+			continue;
+		}
 		if (q > 0 && q <=line&& p > 0 && p <= column)
 		{
 			if (a[q - 1][p - 1] == ' ')
