@@ -57,7 +57,7 @@ void play_move(char a[line][column], int i, int j)
 		if (scanf("%d %d", &q, &p) != 2)
 		{
 			while(getchar()!='\n')
-			printf("输入合法数字\n");
+			    printf("输入合法数字\n");
 			continue;
 		}
 		if (q > 0 && q <=line&& p > 0 && p <= column)
